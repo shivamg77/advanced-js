@@ -1,0 +1,13 @@
+<html>
+  <head> </head>
+  <body onload="hoisting()">
+    <h2>Hoist</h2>
+  </body>
+  <script>
+    function hoisting() {
+      message = "Hoist function";
+      console.log(message);
+      var message;
+    }
+  </script>
+</html>

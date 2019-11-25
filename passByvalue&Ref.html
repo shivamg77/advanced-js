@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <script>
+      function callByValue(x, y) {
+        x = 10; //BY VALUE
+        y = 20;
+        console.log("x=" + x + " " + "y=" + y);
+      }
+
+      let x = 10;
+      let y = 20;
+      console.log("x=" + x + " " + "y=" + y);
+      callByValue(x, y);
+      console.log("x=" + x + " " + "y=" + y);
+
+      function callByReference(obj) {
+        obj.a = 10; //BY REFERENCE
+        console.log(obj);
+      }
+
+      let obj = { a: 1 };
+      console.log(obj);
+      callByReference(obj);
+      console.log(obj);
+    </script>
+  </body>
+</html>

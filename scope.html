@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <body onload="scopes()">
+    <p>Scope</p>
+    <script>
+      var a = 5;
+      function scopes(x, y) {
+        x = 50;
+        y = 30;
+        console.log("x=" + x + " " + "y=" + y + " " + "a=" + a);
+      }
+    </script>
+  </body>
+</html>
